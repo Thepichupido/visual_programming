@@ -1,5 +1,6 @@
-import { describe, it, expectTypeOf } from "vitest";
-import type { DeepReadonly, PickedByType, EventHandlers } from "./lab6.js";
+import { describe, it, expectTypeOf } from "vitest"
+import type { DeepReadonly, PickedByType, EventHandlers } from "./lab6.js"
+import { count, query } from "./lab6.js"
 
 describe("DeepReadonly", () => {
 
@@ -13,10 +14,10 @@ describe("DeepReadonly", () => {
     }
   }
 
-  type ReadonlyObj = DeepReadonly<Obj>
+  type Result = DeepReadonly<Obj>
 
-  it("deep readonly structure", () => {
-    expectTypeOf<ReadonlyObj>().toEqualTypeOf<{
+  it("creates deep readonly type", () => {
+    expectTypeOf<Result>().toEqualTypeOf<{
       readonly a: number
       readonly b: {
         readonly c: string
@@ -29,14 +30,13 @@ describe("DeepReadonly", () => {
 
 })
 
-
 describe("PickedByType", () => {
 
   type User = {
     id: number
     name: string
-    active: boolean
     age: number
+    active: boolean
   }
 
   type Numbers = PickedByType<User, number>
@@ -50,7 +50,6 @@ describe("PickedByType", () => {
 
 })
 
-
 describe("EventHandlers", () => {
 
   type Events = {
@@ -60,11 +59,28 @@ describe("EventHandlers", () => {
 
   type Handlers = EventHandlers<Events>
 
-  it("creates event handlers", () => {
+  it("generates handler names", () => {
     expectTypeOf<Handlers>().toEqualTypeOf<{
       onClick: (event: { x: number; y: number }) => void
       onChange: (event: { value: string }) => void
     }>()
+  })
+
+})
+
+describe("aggregate count", () => {
+
+  it("counts items", () => {
+
+    const users = [
+      { name: "Alice" },
+      { name: "Bob" },
+      { name: "Charlie" }
+    ]
+
+    const result = query(users, count())
+
+    expectTypeOf(result).toEqualTypeOf<number>()
   })
 
 })
