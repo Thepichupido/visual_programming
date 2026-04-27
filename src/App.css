@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.default-bg {
+  background: linear-gradient(135deg, #6b8cff, #405fd6);
+}
+
+.sunny-bg {
+  background: linear-gradient(135deg, #5d8cff, #7fa2ff);
+}
+
+.cloud-bg {
+  background: linear-gradient(135deg, #5f6f8f, #2d3b55);
+}
+
+.rain-bg {
+  background: linear-gradient(135deg, #44546a, #172033);
+}
+
+.snow-bg {
+  background: linear-gradient(135deg, #b7d7ff, #edf6ff);
+}
+
+.weather-app {
+  width: 390px;
+  padding: 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.top-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  border-radius: 14px;
+  padding: 12px;
+  outline: none;
+}
+
+.search button {
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+  cursor: pointer;
+  background: white;
+  color: #3048b8;
+  font-weight: bold;
+}
+
+.mock-label {
+  font-size: 14px;
+}
+
+.current-card {
+  margin-top: 24px;
+}
+
+.date {
+  opacity: 0.8;
+}
+
+.current-card h2 {
+  margin: 8px 0;
+}
+
+.main-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-weather h1 {
+  margin: 0;
+  font-size: 72px;
+}
+
+.main-weather p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.main-weather img {
+  width: 130px;
+  height: 130px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.details div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.details span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.details b {
+  font-size: 14px;
+}
+
+.forecast-list,
+.air-card {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.forecast-list h3,
+.air-card h3 {
+  margin-top: 0;
+}
+
+.forecast-item {
+  display: grid;
+  grid-template-columns: 1fr 40px 45px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.forecast-item span {
+  text-transform: capitalize;
+}
+
+.forecast-item img {
+  width: 38px;
+  height: 38px;
+}
+
+.air-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+.error {
+  margin-top: 20px;
+  color: #ffe0e0;
+  font-weight: bold;
+}

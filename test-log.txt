@@ -1,0 +1,5328 @@
+
+> test
+> vitest --run --reporter=verbose
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.5 [39m[90m/home/esipo/2 курс/виртуальное программирование/visual_programming[39m
+
+ [32m✓[39m src/App.test.tsx[2m > [22mТесты главного экрана App[2m > [22mпоказывает поиск города[32m 34[2mms[22m[39m
+ [32m✓[39m src/App.test.tsx[2m > [22mТесты главного экрана App[2m > [22mпоказывает город и температуру после загрузки[32m 34[2mms[22m[39m
+ [31m×[39m src/App.test.tsx[2m > [22mТесты главного экрана App[2m > [22mпоказывает прогноз на несколько дней[33m 1007[2mms[22m[39m
+[31m   → Found multiple elements with the text: /Прогноз на несколько дней/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<h3>[31m
+  [0mПрогноз на несколько дней[0m
+[36m</h3>[31m
+
+Ignored nodes: comments, script, style
+[36m<h3>[31m
+  [0mПрогноз на несколько дней[0m
+[36m</h3>[31m
+
+Ignored nodes: comments, script, style
+[36m<h3>[31m
+  [0mПрогноз на несколько дней[0m
+[36m</h3>[31m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+[36m</body>[31m
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+ [31m×[39m src/App.test.tsx[2m > [22mТесты главного экрана App[2m > [22mпоказывает данные о погоде и воздухе[33m 1007[2mms[22m[39m
+[31m   → Found multiple elements with the text: 80%
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<b>[31m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[31m
+
+Ignored nodes: comments, script, style
+[36m<b>[31m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[31m
+
+Ignored nodes: comments, script, style
+[36m<b>[31m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[31m
+
+Ignored nodes: comments, script, style
+[36m<b>[31m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[31m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+[36m</body>[31m
+
+Ignored nodes: comments, script, style
+[36m<body>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+  [36m<div>[31m
+    [36m<main[31m
+      [33mclass[31m=[32m"app sunny-bg"[31m
+    [36m>[31m
+      [36m<section[31m
+        [33mclass[31m=[32m"weather-app"[31m
+      [36m>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"top-panel"[31m
+        [36m>[31m
+          [36m<form[31m
+            [33mclass[31m=[32m"search"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mplaceholder[31m=[32m"Введите город"[31m
+              [33mvalue[31m=[32m"Moscow"[31m
+            [36m/>[31m
+            [36m<button[31m
+              [33mtype[31m=[32m"submit"[31m
+            [36m>[31m
+              [0mНайти[0m
+            [36m</button>[31m
+          [36m</form>[31m
+          [36m<label[31m
+            [33mclass[31m=[32m"mock-label"[31m
+          [36m>[31m
+            [36m<input[31m
+              [33mtype[31m=[32m"checkbox"[31m
+            [36m/>[31m
+            [0mИспользовать моки[0m
+          [36m</label>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"current-card"[31m
+        [36m>[31m
+          [36m<p[31m
+            [33mclass[31m=[32m"date"[31m
+          [36m>[31m
+            [0mСейчас[0m
+          [36m</p>[31m
+          [36m<h2>[31m
+            [0mMoscow[0m
+          [36m</h2>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"main-weather"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<h1>[31m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[31m
+              [36m<p>[31m
+                [0mясно[0m
+              [36m</p>[31m
+            [36m</div>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[31m
+            [36m/>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"details"[31m
+          [36m>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВлажность[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mВетер[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[31m
+            [36m</div>[31m
+            [36m<div>[31m
+              [36m<span>[31m
+                [0mДавление[0m
+              [36m</span>[31m
+              [36m<b>[31m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[31m
+            [36m</div>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"forecast-list"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"ясно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/01d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mвторник, 16 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"облачно"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/03d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"forecast-item"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mсреда, 17 июня[0m
+            [36m</span>[31m
+            [36m<img[31m
+              [33malt[31m=[32m"дождь"[31m
+              [33msrc[31m=[32m"https://openweathermap.org/img/wn/10d.png"[31m
+            [36m/>[31m
+            [36m<b>[31m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+        [36m<div[31m
+          [33mclass[31m=[32m"air-card"[31m
+        [36m>[31m
+          [36m<h3>[31m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[31m
+          [36m<p>[31m
+            [0mКачество воздуха: [0m
+            [36m<b>[31m
+              [0mНормальное[0m
+            [36m</b>[31m
+          [36m</p>[31m
+          [36m<div[31m
+            [33mclass[31m=[32m"air-grid"[31m
+          [36m>[31m
+            [36m<span>[31m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[31m
+            [36m<span>[31m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[31m
+          [36m</div>[31m
+        [36m</div>[31m
+      [36m</section>[31m
+    [36m</main>[31m
+  [36m</div>[31m
+[36m</body>[31m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 2 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mТесты главного экрана App[2m > [22mпоказывает прогноз на несколько дней
+[31m[1mTestingLibraryElementError[22m[39m: Found multiple elements with the text: /Прогноз на несколько дней/i
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<h3>[39m
+  [0mПрогноз на несколько дней[0m
+[36m</h3>[39m
+
+Ignored nodes: comments, script, style
+[36m<h3>[39m
+  [0mПрогноз на несколько дней[0m
+[36m</h3>[39m
+
+Ignored nodes: comments, script, style
+[36m<h3>[39m
+  [0mПрогноз на несколько дней[0m
+[36m</h3>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+[36m</body>[39m
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+[36m</body>[39m
+[90m [2m❯[22m waitForWrapper node_modules/@testing-library/dom/dist/wait-for.js:[2m163:27[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m86:33[22m[39m
+[36m [2m❯[22m src/App.test.tsx:[2m46:25[22m[39m
+    [90m 44|[39m     [34mrender[39m([33m<[39m[33mApp[39m [33m/[39m[33m>[39m)
+    [90m 45|[39m
+    [90m 46|[39m     expect(await screen.findByText(/Прогноз на несколько дней/i)).toBe…
+    [90m   |[39m                         [31m^[39m
+    [90m 47|[39m   })
+    [90m 48|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m src/App.test.tsx[2m > [22mТесты главного экрана App[2m > [22mпоказывает данные о погоде и воздухе
+[31m[1mTestingLibraryElementError[22m[39m: Found multiple elements with the text: 80%
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<b>[39m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[39m
+
+Ignored nodes: comments, script, style
+[36m<b>[39m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[39m
+
+Ignored nodes: comments, script, style
+[36m<b>[39m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[39m
+
+Ignored nodes: comments, script, style
+[36m<b>[39m
+  [0m80[0m
+  [0m%[0m
+[36m</b>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+[36m</body>[39m
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"app sunny-bg"[39m
+    [36m>[39m
+      [36m<section[39m
+        [33mclass[39m=[32m"weather-app"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"top-panel"[39m
+        [36m>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m"search"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mplaceholder[39m=[32m"Введите город"[39m
+              [33mvalue[39m=[32m"Moscow"[39m
+            [36m/>[39m
+            [36m<button[39m
+              [33mtype[39m=[32m"submit"[39m
+            [36m>[39m
+              [0mНайти[0m
+            [36m</button>[39m
+          [36m</form>[39m
+          [36m<label[39m
+            [33mclass[39m=[32m"mock-label"[39m
+          [36m>[39m
+            [36m<input[39m
+              [33mtype[39m=[32m"checkbox"[39m
+            [36m/>[39m
+            [0mИспользовать моки[0m
+          [36m</label>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"current-card"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"date"[39m
+          [36m>[39m
+            [0mСейчас[0m
+          [36m</p>[39m
+          [36m<h2>[39m
+            [0mMoscow[0m
+          [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"main-weather"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<h1>[39m
+                [0m27[0m
+                [0m°[0m
+              [36m</h1>[39m
+              [36m<p>[39m
+                [0mясно[0m
+              [36m</p>[39m
+            [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d@4x.png"[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"details"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВлажность[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m80[0m
+                [0m%[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mВетер[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m5[0m
+                [0m м/с[0m
+              [36m</b>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span>[39m
+                [0mДавление[0m
+              [36m</span>[39m
+              [36m<b>[39m
+                [0m756[0m
+                [0m гПа[0m
+              [36m</b>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"forecast-list"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mПрогноз на несколько дней[0m
+          [36m</h3>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mпонедельник, 15 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"ясно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/01d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m27[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mвторник, 16 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"облачно"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/03d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m26[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"forecast-item"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mсреда, 17 июня[0m
+            [36m</span>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"дождь"[39m
+              [33msrc[39m=[32m"https://openweathermap.org/img/wn/10d.png"[39m
+            [36m/>[39m
+            [36m<b>[39m
+              [0m24[0m
+              [0m°[0m
+            [36m</b>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"air-card"[39m
+        [36m>[39m
+          [36m<h3>[39m
+            [0mЗагрязнение воздуха[0m
+          [36m</h3>[39m
+          [36m<p>[39m
+            [0mКачество воздуха: [0m
+            [36m<b>[39m
+              [0mНормальное[0m
+            [36m</b>[39m
+          [36m</p>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"air-grid"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mCO: [0m
+              [0m210[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mNO₂: [0m
+              [0m12[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mO₃: [0m
+              [0m55[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM2.5: [0m
+              [0m8[0m
+            [36m</span>[39m
+            [36m<span>[39m
+              [0mPM10: [0m
+              [0m15[0m
+            [36m</span>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</section>[39m
+    [36m</main>[39m
+  [36m</div>[39m
+[36m</body>[39m
+[90m [2m❯[22m waitForWrapper node_modules/@testing-library/dom/dist/wait-for.js:[2m163:27[22m[39m
+[90m [2m❯[22m node_modules/@testing-library/dom/dist/query-helpers.js:[2m86:33[22m[39m
+[36m [2m❯[22m src/App.test.tsx:[2m52:25[22m[39m
+    [90m 50|[39m     [34mrender[39m([33m<[39m[33mApp[39m [33m/[39m[33m>[39m)
+    [90m 51|[39m
+    [90m 52|[39m     [34mexpect[39m([35mawait[39m screen[33m.[39m[34mfindByText[39m([32m'80%'[39m))[33m.[39m[34mtoBeInTheDocument[39m()
+    [90m   |[39m                         [31m^[39m
+    [90m 53|[39m     [34mexpect[39m(screen[33m.[39m[34mgetByText[39m([32m'5 м/с'[39m))[33m.[39m[34mtoBeInTheDocument[39m()
+    [90m 54|[39m     expect(screen.getByText(/Загрязнение воздуха/i)).toBeInTheDocument…
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m2 passed[39m[22m[90m (4)[39m
+[2m   Start at [22m 04:47:48
+[2m   Duration [22m 2.94s[2m (transform 82ms, setup 0ms, import 185ms, tests 2.08s, environment 541ms)[22m
+
